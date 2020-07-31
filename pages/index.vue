@@ -1,7 +1,7 @@
 <template>
   <div class="w-full min-h-screen bg-white p-6 flex flex-wrap">
     <Header/>
-    <form method="post" @submit.prevent class="w-1/2 min-h-screen bg-gray-300 py-6 px-8">
+    <form method="post" @submit.prevent class="w-full md:w-1/2 min-h-screen bg-gray-300 py-6 px-8">
       <h1 class="text-2xl font-semibold">Generate your signature</h1>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="name" class="w-full text-gray-600 text-sm">Full Name</label>
@@ -69,9 +69,9 @@
         </button>
       </div>
     </form>
-    <div class="w-1/2 min-h-screen bg-gray-500 py-6 px-8 flex flex-wrap flex-col items-start">
+    <div class="w-full md:w-1/2 min-h-screen bg-gray-500 py-6 px-8 flex flex-wrap flex-col items-start">
       <h1 class="text-2xl font-semibold text-gray-900 mb-3">Output:</h1>
-      <div class="w-full bg-white py-5 px-3 rounded" v-html="template" />
+      <div class="w-full bg-white py-5 px-3 rounded scrolling-touch overflow-x-scroll" v-html="template" />
       <div class="w-full mt-8 pr-8 flex flex-wrap justify-between">
         <button type="button" v-clipboard:copy="template" class="px-5 py-2 text-lg rounded text-white bg-blue-800 hover:bg-blue-700 shadow-lg transition-all duration-500">
           Copy
