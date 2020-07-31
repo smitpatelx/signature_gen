@@ -5,7 +5,7 @@
       <h1 class="text-2xl font-semibold">Generate your signature</h1>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="name" class="w-full text-gray-600 text-sm">Full Name</label>
-        <input type="text" id="name" v-model="name" class="w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" required>
+        <input type="text" id="name" v-model="name" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" required>
       </div>
       <div class="w-full grid grid-cols-2 gap-3 mt-3">
         <div class="w-full flex flex-col">
@@ -29,36 +29,36 @@
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="img_url" class="w-full text-gray-600 text-sm">Image Url</label>
-        <input type="url" id="img_url" class="w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="img_url" required>
+        <input type="url" id="img_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="img_url" required>
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="website" class="w-full text-gray-600 text-sm">Website</label>
-        <input type="url" id="website" class="w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="website" required>
+        <input type="url" id="website" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="website" required>
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="banner_url" class="w-full text-gray-600 text-sm">Banner</label>
-        <input type="url" id="banner_url" class="w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="banner_url" required>
+        <input type="url" id="banner_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="banner_url" required>
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="banner_url_target" class="w-full text-gray-600 text-sm">Banner Url Target</label>
-        <input type="url" id="banner_url_target" class="w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="banner_url_target" required>
+        <input type="url" id="banner_url_target" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="banner_url_target" required>
       </div>
       <h2 class="text-2xl font-semibold text-gray-900 mt-4">Social:</h2>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="linkedin" class="w-full text-gray-600 text-sm">Linkedin Url</label>
-        <input type="url" id="linkedin" v-model="linkedin_url" class="w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" required>
+        <input type="url" id="linkedin" v-model="linkedin_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" required>
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="twitter" class="w-full text-gray-600 text-sm">Twitter Url</label>
-        <input type="url" id="twitter" v-model="twitter_url" class="w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded">
+        <input type="url" id="twitter" v-model="twitter_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded">
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="instagram" class="w-full text-gray-600 text-sm">Instagram Url</label>
-        <input type="url" id="instagram" v-model="instagram_url" class="w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded">
+        <input type="url" id="instagram" v-model="instagram_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded">
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="facebook" class="w-full text-gray-600 text-sm">Facebook Page Url</label>
-        <input type="url" id="facebook" v-model="facebook_url" class="w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded">
+        <input type="url" id="facebook" v-model="facebook_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded">
       </div>
       <div class="w-full mt-8 pr-8 flex flex-wrap justify-between">
         <!-- <button type="submit" class="px-5 py-2 text-lg rounded text-white bg-blue-800 hover:bg-blue-700 shadow-lg transition-all duration-500">
