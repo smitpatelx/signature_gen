@@ -24,7 +24,10 @@
         </div>
         <div class="w-full flex flex-col">
           <label for="phone" class="w-full text-gray-600 text-sm">Phone</label>
-          <input type="tel" id="phone" v-model="phone" class="w-full text-blue-800 mt-1 px-3 py-1 text-base rounded">
+          <div class="flex flex-wrap flex-row justify-start items-stretch mt-1">
+            <div class="bg-gray-200 text-gray-700 rounded-l px-3 flex justify-center items-center">+1</div>
+            <input type="tel" id="phone" v-model="phone" class="text-blue-800 px-3 py-1 text-base rounded-r flex-1">
+          </div>
         </div>
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
@@ -112,6 +115,7 @@ export default {
   methods:{
     formate_phone(val){
       let phone = val.split('');
+      phone.splice(0, 0, "+1-");
       phone.splice(4, 0, "-");
       phone.splice(8, 0, "-");
       return phone.join('');
