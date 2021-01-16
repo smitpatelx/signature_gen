@@ -1,80 +1,80 @@
 <template>
-  <div class="w-full min-h-screen bg-white p-6 flex flex-wrap">
+  <div class="w-full min-h-screen bg-white p-6 flex flex-wrap style-inputs bg-white">
     <Header/>
-    <form method="post" @submit.prevent class="w-full md:w-1/2 min-h-screen bg-gray-300 py-6 px-8">
+    <form method="post" @submit.prevent class="w-full md:w-1/2 min-h-screen bg-gray-100 py-6 px-8 rounded-l-md shadow-2xl ring-1 ring-gray-300">
       <h1 class="text-2xl font-semibold">Generate your signature</h1>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="name" class="w-full text-gray-600 text-sm">Full Name</label>
-        <input type="text" id="name" v-model="name" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" required>
+        <input type="text" id="name" v-model="name" class="w-full md:w-2/3 text-gray-500 mt-1 px-3 py-1 text-base rounded" required>
       </div>
       <div class="w-full grid grid-cols-2 gap-3 mt-3">
         <div class="w-full flex flex-col">
           <label for="position" class="w-full text-gray-600 text-sm">Position</label>
-          <input type="text" id="position" v-model="position" class="w-full text-blue-800 mt-1 px-3 py-1 text-base rounded" required>
+          <input type="text" id="position" v-model="position" class="w-full text-gray-500 mt-1 px-3 py-1 text-base rounded" required>
         </div>
         <div class="w-full flex flex-col">
           <label for="company_name" class="w-full text-gray-600 text-sm">Company Name</label>
-          <input type="text" id="company_name" v-model="company_name" class="w-full text-blue-800 mt-1 px-3 py-1 text-base rounded" required>
+          <input type="text" id="company_name" v-model="company_name" class="w-full text-gray-500 mt-1 px-3 py-1 text-base rounded" required>
         </div>
       </div>
       <div class="w-full grid grid-cols-2 gap-3 mt-3">
         <div class="w-full flex flex-col">
           <label for="email" class="w-full text-gray-600 text-sm">Email</label>
-          <input type="email" id="email" v-model="email" class="w-full text-blue-800 mt-1 px-3 py-1 text-base rounded" required>
+          <input type="email" id="email" v-model="email" class="w-full text-gray-500 mt-1 px-3 py-1 text-base rounded" required>
         </div>
         <div class="w-full flex flex-col">
           <label for="phone" class="w-full text-gray-600 text-sm">Phone</label>
-          <div class="flex flex-wrap flex-row justify-start items-stretch mt-1">
-            <div class="bg-gray-200 text-gray-700 rounded-l px-3 flex justify-center items-center">+1</div>
-            <input type="tel" id="phone" v-model="phone" class="text-blue-800 px-3 py-1 text-base rounded-r flex-1">
+          <div class="flex flex-row justify-start content-start items-stretch mt-1">
+            <div class="bg-gray-200 text-gray-700 rounded-l px-3 py-1 flex justify-center items-center flex-grow-0">+1</div>
+            <input type="tel" id="phone" v-model="phone" class="text-gray-500 px-3 py-1 text-base rounded-r flex-grow flex-1">
           </div>
         </div>
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="img_url" class="w-full text-gray-600 text-sm">Image Url</label>
-        <input type="url" id="img_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="img_url" required>
+        <input type="url" id="img_url" class="w-full md:w-2/3 text-gray-500 mt-1 px-3 py-1 text-base rounded" v-model="img_url" required>
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="website" class="w-full text-gray-600 text-sm">Website</label>
-        <input type="url" id="website" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="website" required>
+        <input type="url" id="website" class="w-full md:w-2/3 text-gray-500 mt-1 px-3 py-1 text-base rounded" v-model="website" required>
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="banner_url" class="w-full text-gray-600 text-sm">Banner</label>
-        <input type="url" id="banner_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="banner_url" required>
+        <input type="url" id="banner_url" class="w-full md:w-2/3 text-gray-500 mt-1 px-3 py-1 text-base rounded" v-model="banner_url" required>
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="banner_url_target" class="w-full text-gray-600 text-sm">Banner Url Target</label>
-        <input type="url" id="banner_url_target" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" v-model="banner_url_target" required>
+        <input type="url" id="banner_url_target" class="w-full md:w-2/3 text-gray-500 mt-1 px-3 py-1 text-base rounded" v-model="banner_url_target" required>
       </div>
-      <h2 class="text-2xl font-semibold text-gray-900 mt-4">Social:</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8">Social:</h2>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="linkedin" class="w-full text-gray-600 text-sm">Linkedin Url</label>
-        <input type="url" id="linkedin" v-model="linkedin_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded" required>
+        <input type="url" id="linkedin" v-model="linkedin_url" class="w-full md:w-2/3 text-gray-500 mt-1 px-3 py-1 text-base rounded" required>
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="twitter" class="w-full text-gray-600 text-sm">Twitter Url</label>
-        <input type="url" id="twitter" v-model="twitter_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded">
+        <input type="url" id="twitter" v-model="twitter_url" class="w-full md:w-2/3 text-gray-500 mt-1 px-3 py-1 text-base rounded">
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="instagram" class="w-full text-gray-600 text-sm">Instagram Url</label>
-        <input type="url" id="instagram" v-model="instagram_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded">
+        <input type="url" id="instagram" v-model="instagram_url" class="w-full md:w-2/3 text-gray-500 mt-1 px-3 py-1 text-base rounded">
       </div>
       <div class="w-full mt-3 pr-8 flex flex-col">
         <label for="facebook" class="w-full text-gray-600 text-sm">Facebook Page Url</label>
-        <input type="url" id="facebook" v-model="facebook_url" class="w-full md:w-2/3 text-blue-800 mt-1 px-3 py-1 text-base rounded">
+        <input type="url" id="facebook" v-model="facebook_url" class="w-full md:w-2/3 text-gray-500 mt-1 px-3 py-1 text-base rounded">
       </div>
       <div class="w-full mt-8 pr-8 flex flex-wrap justify-between">
         <!-- <button type="submit" class="px-5 py-2 text-lg rounded text-white bg-blue-800 hover:bg-blue-700 shadow-lg transition-all duration-500">
           Generate
         </button> -->
-        <button type="reset" class="px-5 py-2 text-lg rounded text-blue-800 bg-blue-200 hover:bg-blue-300 shadow-lg  border border-blue-800 transition-all duration-500">
+        <button type="reset">
           Reset
         </button>
       </div>
     </form>
-    <div class="w-full md:w-1/2 min-h-screen bg-gray-500 py-6 px-8 flex flex-wrap flex-col items-start">
+    <div class="w-full md:w-1/2 min-h-screen bg-gray-200 py-6 px-8 flex flex-wrap flex-col items-start rounded-r-md ring-1 ring-gray-300">
       <h1 class="text-2xl font-semibold text-gray-900 mb-3">Output:</h1>
-      <div class="w-full bg-white py-5 px-3 rounded scrolling-touch overflow-x-scroll signature" v-html="template" />
+      <div class="w-full bg-white py-5 px-3 rounded scrolling-touch overflow-x-scroll lg:overflow-x-hidden signature" v-html="template" />
       <div class="w-full mt-8 pr-8 flex flex-wrap justify-between">
         <button type="button" @click="copy()" class="px-5 py-2 text-lg rounded text-white bg-blue-800 hover:bg-blue-700 shadow-lg transition-all duration-500">
           Copy 
@@ -87,7 +87,7 @@
       </div>
 
       <h1 class="text-2xl font-semibold text-gray-900 mt-4 mb-3">Dark Version:</h1>
-      <div class="w-full bg-white py-5 px-3 rounded scrolling-touch overflow-x-scroll signature" v-html="template2" />
+      <div class="w-full bg-gray-700 py-5 px-3 rounded scrolling-touch overflow-x-scroll lg:overflow-x-hidden signature" v-html="template2" />
       <div class="w-full mt-8 pr-8 flex flex-wrap justify-between">
         <button type="button" @click="copy2()" class="px-5 py-2 text-lg rounded text-white bg-blue-800 hover:bg-blue-700 shadow-lg transition-all duration-500">
           Copy 
@@ -112,17 +112,17 @@ export default {
     return{
       img_url:'https://signature-gen.netlify.app/smit-patel.jpeg',
       name:'Smit Patel',
-      company_name: 'Netdevv',
-      position:'Director of Web Development',
+      company_name: 'SMITPATELX',
+      position:'Full Stack Engineer',
       email:'smitpatel.dev@gmail.com',
       phone:'0000000000',
-      website:'blabbly.com',
-      linkedin_url:'https://www.linkedin.com/company/blabbly',
-      instagram_url:'https://www.instagram.com/getblabbly/',
-      facebook_url: 'https://www.facebook.com/getblabbly/',
-      twitter_url:'https://twitter.com/getblabbly',
+      website:'smitpatelx.com',
+      linkedin_url:'https://www.linkedin.com/in/smitpatelx/',
+      instagram_url:'https://www.instagram.com/smit.dev/',
+      facebook_url: 'https://www.facebook.com/smitpatelx/',
+      twitter_url:'https://twitter.com/smitpatelx',
       banner_url_target: 'http://smitpatelx.com/',
-      banner_url: 'https://blabbly.com/wp-content/uploads/2020/01/end2.jpg',
+      banner_url: '/banner.png',
     }
   },
   methods:{
@@ -167,7 +167,7 @@ export default {
       return text;
     },
     template2(){
-      let text = `<table id="signature2" style="max-width: 600px; direction: ltr; background: #333333; border: 4px solid #333333;"> <tbody class=""> <tr class=""> <td class=""> <table class="html new_10 wisestamp_app main_sig" border="0" cellpadding="0" cellspacing="0" style="width: 520px; margin-bottom: 8px;"> <tbody class=""> <tr class=""> <td valign="top" width="10" style="vertical-align: top; width: 15px;" class=""><img src="${this.img_url}`;
+      let text = `<table id="signature2" style="max-width: 600px; direction: ltr; background: #334154; border: 4px solid #334154;"> <tbody class=""> <tr class=""> <td class=""> <table class="html new_10 wisestamp_app main_sig" border="0" cellpadding="0" cellspacing="0" style="width: 520px; margin-bottom: 8px;"> <tbody class=""> <tr class=""> <td valign="top" width="10" style="vertical-align: top; width: 15px;" class=""><img src="${this.img_url}`;
       text += `" alt="photo" width="65" height="65" style="border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; max-width: 120px;" class=""></td><td valign="top" style="vertical-align: top; padding-left: 20px;" class=""> <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 435px;" class=""> <tbody class=""> <tr class=""> <td style="padding-bottom: 6px;" class=""> <table border="0" cellpadding="0" cellspacing="0" width="100%" style="line-height: 1.6; font-family: Arial; font-size: 11px; color: rgb(78, 75, 76); padding-left: 2px; width: 433px;" class=""> <tbody class=""> <tr class=""> <td class=""> <div style="color: #fff; padding-bottom: 2px; margin: 0px; font-size: 20px; font-weight: bold; line-height: 18px;" class="">${this.name}`;
       text += `</div><span style="color: #fff; font-size: 14px;" class="">${this.position}</span><span style="color: #fff; font-size: 14px; font-weight: bold;" class="">, ${this.company_name}`;
       text += `</span> </td></tr></tbody> </table> </td></tr><tr class=""> <td width="328" style="padding-bottom: 7px; padding-top: 5px; width: 328px;" class=""> <table border="0" cellpadding="0" cellspacing="0" width="100%" style="line-height: 1.6; font-family: Arial; font-size: 11px; color: rgb(78, 75, 76); padding-left: 2px; width: 433px;" class=""> <tbody class=""> <tr class=""> <td style="padding-right: 0px; width: 15px; padding-bottom: 0px;" class=""><img height="15px" style="margin-top:4px;" width="15px" src="https://signature-gen.netlify.com/phone-w.png" class=""></td><td style="padding:0 0 0 5px;" class=""><a href="tel:+1${this.phone}" style="vertical-align: middle; text-decoration: none; color: #fff; font-size: 14px; margin: 0px;" class="">${this.formate_phone(this.phone)}`;
@@ -185,6 +185,23 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.style-inputs{
+  input {
+    &:focus{
+      outline: none;
+    }
 
+    @apply focus:ring focus:ring-teal-200;
+  }
+
+  button {
+    &:focus{
+      outline: none;
+    }
+
+    @apply px-5 py-2 text-lg font-semibold rounded text-gray-100 bg-gray-500 hover:bg-gray-400 shadow-md transition-all duration-300
+          focus:ring focus:ring-teal-200;
+  }
+}
 </style>

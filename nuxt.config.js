@@ -56,6 +56,25 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    ['nuxt-font-loader-strategy', { 
+      ignoreLighthouse: true,
+      ignoredEffectiveTypes: ['2g', 'slow-2g'],
+      fonts: [
+        // Font
+        {
+          fileExtensions: ['woff2'],
+          fontFamily: 'Mulish',
+          fontFaces: [
+            // Font-Face
+            {
+              preload: true,
+              src: '@/static/fonts/mulish-variablefont_wght-webfont',
+              fontDisplay: 'swap'
+            },
+          ]
+        },
+      ]
+    }],
   ],
   /*
    ** Axios module configuration
