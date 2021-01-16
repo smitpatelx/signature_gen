@@ -17,7 +17,7 @@
           <input type="text" id="company_name" v-model="company_name" class="w-full text-gray-500 mt-1 px-3 py-1 text-base rounded" required>
         </div>
       </div>
-      <div class="w-full grid grid-cols-2 gap-3 mt-3">
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
         <div class="w-full flex flex-col">
           <label for="email" class="w-full text-gray-600 text-sm">Email</label>
           <input type="email" id="email" v-model="email" class="w-full text-gray-500 mt-1 px-3 py-1 text-base rounded" required>
@@ -64,9 +64,6 @@
         <input type="url" id="facebook" v-model="facebook_url" class="w-full md:w-2/3 text-gray-500 mt-1 px-3 py-1 text-base rounded">
       </div>
       <div class="w-full mt-8 pr-8 flex flex-wrap justify-between">
-        <!-- <button type="submit" class="px-5 py-2 text-lg rounded text-white bg-blue-800 hover:bg-blue-700 shadow-lg transition-all duration-500">
-          Generate
-        </button> -->
         <button type="reset">
           Reset
         </button>
@@ -167,7 +164,7 @@ export default {
       return text;
     },
     template2(){
-      let text = `<table id="signature2" style="max-width: 600px; direction: ltr; background: #334154; border: 4px solid #334154;"> <tbody class=""> <tr class=""> <td class=""> <table class="html new_10 wisestamp_app main_sig" border="0" cellpadding="0" cellspacing="0" style="width: 520px; margin-bottom: 8px;"> <tbody class=""> <tr class=""> <td valign="top" width="10" style="vertical-align: top; width: 15px;" class=""><img src="${this.img_url}`;
+      let text = `<table id="signature2" style="max-width: 600px; direction: ltr; background: #44403c; border: 4px solid #44403c;"> <tbody class=""> <tr class=""> <td class=""> <table class="html new_10 wisestamp_app main_sig" border="0" cellpadding="0" cellspacing="0" style="width: 520px; margin-bottom: 8px;"> <tbody class=""> <tr class=""> <td valign="top" width="10" style="vertical-align: top; width: 15px;" class=""><img src="${this.img_url}`;
       text += `" alt="photo" width="65" height="65" style="border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; max-width: 120px;" class=""></td><td valign="top" style="vertical-align: top; padding-left: 20px;" class=""> <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 435px;" class=""> <tbody class=""> <tr class=""> <td style="padding-bottom: 6px;" class=""> <table border="0" cellpadding="0" cellspacing="0" width="100%" style="line-height: 1.6; font-family: Arial; font-size: 11px; color: rgb(78, 75, 76); padding-left: 2px; width: 433px;" class=""> <tbody class=""> <tr class=""> <td class=""> <div style="color: #fff; padding-bottom: 2px; margin: 0px; font-size: 20px; font-weight: bold; line-height: 18px;" class="">${this.name}`;
       text += `</div><span style="color: #fff; font-size: 14px;" class="">${this.position}</span><span style="color: #fff; font-size: 14px; font-weight: bold;" class="">, ${this.company_name}`;
       text += `</span> </td></tr></tbody> </table> </td></tr><tr class=""> <td width="328" style="padding-bottom: 7px; padding-top: 5px; width: 328px;" class=""> <table border="0" cellpadding="0" cellspacing="0" width="100%" style="line-height: 1.6; font-family: Arial; font-size: 11px; color: rgb(78, 75, 76); padding-left: 2px; width: 433px;" class=""> <tbody class=""> <tr class=""> <td style="padding-right: 0px; width: 15px; padding-bottom: 0px;" class=""><img height="15px" style="margin-top:4px;" width="15px" src="https://signature-gen.netlify.com/phone-w.png" class=""></td><td style="padding:0 0 0 5px;" class=""><a href="tel:+1${this.phone}" style="vertical-align: middle; text-decoration: none; color: #fff; font-size: 14px; margin: 0px;" class="">${this.formate_phone(this.phone)}`;
@@ -200,7 +197,7 @@ export default {
       outline: none;
     }
 
-    @apply px-5 py-2 text-lg font-semibold rounded text-gray-100 bg-gray-500 hover:bg-gray-400 shadow-md transition-all duration-300
+    @apply px-5 py-2 my-1 text-lg font-semibold rounded text-gray-100 bg-gray-500 hover:bg-gray-400 shadow-md transition-all duration-300
           focus:ring focus:ring-teal-200;
   }
 }
