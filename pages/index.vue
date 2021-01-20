@@ -75,11 +75,11 @@
       <div class="w-full mt-8 pr-8 flex flex-wrap justify-between">
         <button type="button" @click="copy()">
           Copy 
-          <svg class="inline-block h-4 w-4 ml-2 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 10c-.5523 0-1 .4477-1 1v9c0 .5523.4477 1 1 1h9c.5523 0 1-.4477 1-1v-9c0-.5523-.4477-1-1-1h-9zm-3 1c0-1.6569 1.3431-3 3-3h9c1.6569 0 3 1.3431 3 3v9c0 1.6569-1.3431 3-3 3h-9c-1.6569 0-3-1.3431-3-3v-9z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M4 3a1 1 0 00-1 1v9a1 1 0 001 1h1c.5523 0 1 .4477 1 1s-.4477 1-1 1H4a3 3 0 01-3-3V4a3 3 0 013-3h9a3 3 0 013 3v1c0 .5523-.4477 1-1 1s-1-.4477-1-1V4a1.0002 1.0002 0 00-1-1H4z"/></svg>
+          <svg class="inline-block h-4 w-4 m-2 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 10c-.5523 0-1 .4477-1 1v9c0 .5523.4477 1 1 1h9c.5523 0 1-.4477 1-1v-9c0-.5523-.4477-1-1-1h-9zm-3 1c0-1.6569 1.3431-3 3-3h9c1.6569 0 3 1.3431 3 3v9c0 1.6569-1.3431 3-3 3h-9c-1.6569 0-3-1.3431-3-3v-9z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M4 3a1 1 0 00-1 1v9a1 1 0 001 1h1c.5523 0 1 .4477 1 1s-.4477 1-1 1H4a3 3 0 01-3-3V4a3 3 0 013-3h9a3 3 0 013 3v1c0 .5523-.4477 1-1 1s-1-.4477-1-1V4a1.0002 1.0002 0 00-1-1H4z"/></svg>
         </button>
         <button type="button" v-clipboard:copy="template">
           Copy Html 
-          <svg class="inline-block h-4 w-4 ml-2 fill-current" viewBox="0 0 24 24"><path d="M11.553 1.106a1 1 0 01.894 0l10 5a1 1 0 010 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 010-1.788l10-5zM4.236 7L12 10.882 19.764 7 12 3.118 4.236 7zM1.106 16.553a1 1 0 011.341-.447L12 20.882l9.553-4.776a1 1 0 11.894 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 01-.447-1.341z"/><path d="M1.106 11.553a1 1 0 011.341-.447L12 15.882l9.553-4.776a1 1 0 11.894 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 01-.447-1.341z"/></svg>
+          <svg class="inline-block h-4 w-4 m-2 fill-current" viewBox="0 0 24 24"><path d="M11.553 1.106a1 1 0 01.894 0l10 5a1 1 0 010 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 010-1.788l10-5zM4.236 7L12 10.882 19.764 7 12 3.118 4.236 7zM1.106 16.553a1 1 0 011.341-.447L12 20.882l9.553-4.776a1 1 0 11.894 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 01-.447-1.341z"/><path d="M1.106 11.553a1 1 0 011.341-.447L12 15.882l9.553-4.776a1 1 0 11.894 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 01-.447-1.341z"/></svg>
         </button>
       </div>
 
@@ -88,11 +88,11 @@
       <div class="w-full mt-8 pr-8 flex flex-wrap justify-between">
         <button type="button" @click="copy2()">
           Copy 
-          <svg class="inline-block h-4 w-4 ml-2 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 10c-.5523 0-1 .4477-1 1v9c0 .5523.4477 1 1 1h9c.5523 0 1-.4477 1-1v-9c0-.5523-.4477-1-1-1h-9zm-3 1c0-1.6569 1.3431-3 3-3h9c1.6569 0 3 1.3431 3 3v9c0 1.6569-1.3431 3-3 3h-9c-1.6569 0-3-1.3431-3-3v-9z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M4 3a1 1 0 00-1 1v9a1 1 0 001 1h1c.5523 0 1 .4477 1 1s-.4477 1-1 1H4a3 3 0 01-3-3V4a3 3 0 013-3h9a3 3 0 013 3v1c0 .5523-.4477 1-1 1s-1-.4477-1-1V4a1.0002 1.0002 0 00-1-1H4z"/></svg>
+          <svg class="inline-block h-4 w-4 m-2 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 10c-.5523 0-1 .4477-1 1v9c0 .5523.4477 1 1 1h9c.5523 0 1-.4477 1-1v-9c0-.5523-.4477-1-1-1h-9zm-3 1c0-1.6569 1.3431-3 3-3h9c1.6569 0 3 1.3431 3 3v9c0 1.6569-1.3431 3-3 3h-9c-1.6569 0-3-1.3431-3-3v-9z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M4 3a1 1 0 00-1 1v9a1 1 0 001 1h1c.5523 0 1 .4477 1 1s-.4477 1-1 1H4a3 3 0 01-3-3V4a3 3 0 013-3h9a3 3 0 013 3v1c0 .5523-.4477 1-1 1s-1-.4477-1-1V4a1.0002 1.0002 0 00-1-1H4z"/></svg>
         </button>
         <button type="button" v-clipboard:copy="template2">
           Copy Html 
-          <svg class="inline-block h-4 w-4 ml-2 fill-current" viewBox="0 0 24 24"><path d="M11.553 1.106a1 1 0 01.894 0l10 5a1 1 0 010 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 010-1.788l10-5zM4.236 7L12 10.882 19.764 7 12 3.118 4.236 7zM1.106 16.553a1 1 0 011.341-.447L12 20.882l9.553-4.776a1 1 0 11.894 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 01-.447-1.341z"/><path d="M1.106 11.553a1 1 0 011.341-.447L12 15.882l9.553-4.776a1 1 0 11.894 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 01-.447-1.341z"/></svg>
+          <svg class="inline-block h-4 w-4 m-2 fill-current" viewBox="0 0 24 24"><path d="M11.553 1.106a1 1 0 01.894 0l10 5a1 1 0 010 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 010-1.788l10-5zM4.236 7L12 10.882 19.764 7 12 3.118 4.236 7zM1.106 16.553a1 1 0 011.341-.447L12 20.882l9.553-4.776a1 1 0 11.894 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 01-.447-1.341z"/><path d="M1.106 11.553a1 1 0 011.341-.447L12 15.882l9.553-4.776a1 1 0 11.894 1.788l-10 5a1 1 0 01-.894 0l-10-5a1 1 0 01-.447-1.341z"/></svg>
         </button>
       </div>
     </div>
